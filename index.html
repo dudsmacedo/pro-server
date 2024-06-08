@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO SERVER</title>
+
+    <!--Bootstrap 5.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    
+    <!--Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+     rel="stylesheet"/>
+    
+    <!--Conectando com CSS - Ícone da página --> 
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" href="/src/img/logo.png" type="image/png">
+</head>
+
+    <!--Navbar -->
+<body>
+    <div class="head-section">
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#"><img class="img-fluid"
+                src="/src/img/logo.png" width="150px"></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ms-0 ms-md-3">
+                            <a class="nav-link" aria-current="page" href="#">Início</a>
+                        </li>
+
+                        <li class="nav-item ms-0 ms-md-3">
+                            <a class="nav-link" href="#serviços">Serviços</a>
+                        </li>
+
+                        <li class="nav-item ms-0 ms-md-3">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+
+                        <li class="nav-item ms-0 ms-md-3">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contatoModal" href="#">Contato</a>
+                        </li>
+
+                        <li class="nav-item ms-0 ms-md-3">
+                            <a class="nav-link" href="#mapa">Mapa</a>
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </nav>
+
+     <!--Íncio -->
+        <header class="hero-section">
+            <div class="container">
+                <div class="row align-items-center py-4 g-5">
+                    <div class="col-12 col-md-6">
+                        <div class="text-center text-md-start">
+                            <h1 class="display-md-2 display-4 fw-bold text-dark pn-2">
+                               Soluções em <span class="text-primary">Servidores</span> 
+                            </h1>
+                            <p class="lead">
+                                Explore nossos serviços para os mais variados especialistas do mercado.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="/src/img/inicio.png" class="img-fluid" alt="a man using vr gadget"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!--Serviços Prestados - Cards -->
+    <div id="serviços"></div>
+      <div class="features-section py-5">
+        <div class="container">
+            <h2 class="fs-1 fw-bold text-center pt-5 pb-5 text-primary">
+                Serviços Prestados
+            </h2>
+
+            <div class="row g-5 pb-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card px-3 py-4 shadow-sm">
+                        <img class="card-img-top" src="src/img/servidorazul.png" alt="Imagem de capa do card" width="20px">
+                        <h3 class="f5">Servidores Físicos</h3>
+                        <p class="card-text lead">
+                            Venda e locação de servidores com suporte e garantia estendida, com o melhor pós venda do mercado.</p>
+                    </div>
+                </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card px-3 py-4 shadow-sm blue-bg">
+                        <img class="card-img-top" src="src/img/nuvembranca.png" alt="Imagem de capa do card" width="20px">
+                        <h3 class="f5">Servidores em Nuvem</h3>
+                        <p class="card-text lead">
+                        Seu projeto sob medida, suporte que você precisa para garantir que seus serviços permaneçam online e seguros.</p>                        
+                    </div>
+                </div>
+
+            <div class="col-md-6 col-lg-4 offset-md-3 offeset-0 offset-lg-0">
+                <div class="card px-3 py-4 shadow-sm">
+                        <img class="card-img-top" src="src/img/suporte.png" alt="Imagem de capa do card" width="20px">
+                        <h3 class="f5">Suporte e Manutenção</h3>
+                        <p class="card-text lead">
+                        Problemas resolvidos e executados rapidamente para garantir que seus recursos não fiquem parados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Produtos -->
+    <div id="produtos"></div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="fs-1 fw-bold text-center pt-5 pb-5 text-primary">
+                    Nossos Produtos
+                </h2>
+                <p> Confira nosso catélogo de produtos com preços e promoções imperdíveis! </p>
+                <div>
+                    <a href="https://wa.me/5516997335021" target="_blank" class="btn btn-primary btn-lg btn-custom">Ver catálogo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Mapa -->
+<div id="mapa"></div>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Nossa Localização</h5>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5686812901713!2d-47.80064452073963!3d-21.20928653016898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9b8abe0537cc1%3A0x443a578977e7e330!2sFaculdade%20REGES%20de%20Ribeir%C3%A3o%20Preto!5e0!3m2!1spt-BR!2sbr!4v1717423558617!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <p>Endereço: Rua Benjamim Anderson Stauffer 801, Ribeirão Preto, SP</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer -->
+    <footer class="mt-5">
+        <div class="footer-container">
+            <p>Acesse nossas redes sociais:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><img src="/src/img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="/src/img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!--Smooth scroll -->
+    <script>
+        document.querySelectorAll('.nav-link[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+    <!--Tradutor -->
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = {"default_language":"pt-br","languages":["pt-br","fr","de","es","en"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","flag_style":"3d"}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+    <!--Modal do contato-->
+    <div class="modal fade" id="contatoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Entre em contato</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="exampleFormControlInput1">Nome completo</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu nome">
+                  </div>
+                  <br>
+                  <div class="form-group">
+                      <label for="exampleFormControlInput2">Endereço de e-mail</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="nome@exemplo.com">
+                  </div>
+                  <br>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Deixe seu comentário</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira aqui seu comentário"></textarea>
+                  </div>
+                  <br>
+              </form>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Bootstrap-->
+    <script 
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+       crossorigin="anonymous"
+    ></script>
+    <script 
+       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+       crossorigin="anonymous"
+    ></script>
+    <script 
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+       crossorigin="anonymous"
+    ></script> 
+</body>
+</html>
